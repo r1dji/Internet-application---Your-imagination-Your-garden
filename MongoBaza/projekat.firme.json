@@ -1,0 +1,116 @@
+[{
+  "_id": {
+    "$oid": "66edb139724f8482bd1e0c8c"
+  },
+  "naziv": "Firma 1",
+  "adresa": "Dobracina 11, Belgrade 11102, Serbia",
+  "ocena": 0,
+  "telefon": "067777",
+  "datumPocetkaOdmora": "2025-08-21",
+  "datumKrajaOdmora": "2025-08-31",
+  "kontaktOsoba": "kontakt osoba 1",
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje travnjaka",
+      "cena": 12,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "komentari": []
+},
+{
+  "_id": {
+    "$oid": "66edb2ed724f8482bd1e0c92"
+  },
+  "naziv": "Firma 2",
+  "adresa": "Kralja Petra 70, Belgrade 11106, Serbia",
+  "ocena": 0,
+  "telefon": "064444",
+  "datumPocetkaOdmora": "2025-08-11",
+  "datumKrajaOdmora": "2025-08-21",
+  "kontaktOsoba": "kontakt osoba 2",
+  "usluge": [
+    {
+      "naziv": "dekorisanje stolova i stolica",
+      "cena": 14,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "dekorisanje stolova i stolica premium",
+      "cena": 27,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "osvetljenje bazena",
+      "cena": 28,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "komentari": []
+},
+{
+  "_id": {
+    "$oid": "66edb361724f8482bd1e0c94"
+  },
+  "naziv": "Firma 3",
+  "adresa": "Ruzveltova 63, Belgrade 11060, Serbia",
+  "ocena": 0,
+  "telefon": "065555",
+  "datumPocetkaOdmora": "2025-07-20",
+  "datumKrajaOdmora": "2025-07-30",
+  "kontaktOsoba": "kontakt osoba 3",
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "white program",
+      "cena": 12,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "komentari": []
+}
+]

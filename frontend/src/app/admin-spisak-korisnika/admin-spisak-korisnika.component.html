@@ -1,0 +1,166 @@
+<div class="content">
+  <div class="korisnici">
+    <div class="odabirKorisnika">
+      <h3 id="korisnikLabel">Korisnici</h3>
+      <select class="dropDownMenu" [(ngModel)]="izabraniKorisnik">
+        <option *ngFor="let k of korisnici" class="odabirPolje" [ngValue]="k">{{k.korisnicko_ime}} - {{k.ime}} {{k.prezime}} - {{k.tip}}</option>
+      </select>
+    </div>
+    <div class="podaciKorisnikaFirme" id="podaciKorisnika">
+      <h3 id="podaciKorisnikaFirmeLabel">Podaci o korisniku:</h3>
+      <div id="prikazSelektovanog" *ngIf="izabraniKorisnik.korisnicko_ime != ''">
+        <div id="profSlikaContainer">
+          <img [src]="izabraniKorisnik.profilna_slika" id="profSlika">
+          <span id="azuriranjeSlikeSpan">     Ažuriraj sliku: <input type="file" (change)="slikaCheck($event)" [(ngModel)]="slikaNovoHolder"><button class="azurirajFirmu" id="slikaAzuriranje" [disabled]="slikaNovoHolder==null || messageSlikaError!=''" (click)="promeniSlikuKor()">Ažuriraj</button><span class="messageError"><br>{{messageSlikaError}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Korisničko ime: <input type="text" [value]="izabraniKorisnik.korisnicko_ime" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="korImeNovo" (change)="korImeCheck()" placeholder="Novo korisničko ime"><button class="azurirajFirmu" (click)="promeniKorImeKor()" [disabled]="korImeNovo=='' || korImeNovo==izabraniKorisnik.korisnicko_ime || messageKorImeError!=''">Ažuriraj</button><span class="messageError"><br>{{messageKorImeError}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Lozinka: <input type="text" value="*****" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="lozinkaNovo" (change)="lozinkaCheck()" placeholder="Nova lozinku"><button class="azurirajFirmu" (click)="promeniLozKor()" [disabled]="lozinkaNovo=='' || messageLozinkaError!=''">Ažuriraj</button><span class="messageError"><br>{{messageLozinkaError}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Ime: <input type="text" [value]="izabraniKorisnik.ime" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="imeNovo" placeholder="Novo ime"><button class="azurirajFirmu" (click)="promeniImeKor()" [disabled]="imeNovo=='' || imeNovo==izabraniKorisnik.ime">Ažuriraj</button><span class="messageError"></span></span>
+        </div>
+        <div class="zahtevElem">
+          Prezime: <input type="text" [value]="izabraniKorisnik.prezime" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="prezimeNovo" placeholder="Novo prezime"><button class="azurirajFirmu" (click)="promeniPrezimeKor()" [disabled]="prezimeNovo=='' || prezimeNovo==izabraniKorisnik.prezime">Ažuriraj</button><span class="messageError"></span></span>
+        </div>
+        <div class="zahtevElem">
+          Pol: <input type="text" [value]="izabraniKorisnik.pol" readonly>
+          <span><input type="radio" name="pol" class="inputPolje" value="muski" [(ngModel)]="polNovo" [disabled]="izabraniKorisnik.pol=='muski'">Muški <input type="radio" name="pol" class="inputPolje" value="zenski" [(ngModel)]="polNovo" [disabled]="izabraniKorisnik.pol=='zenski'">Ženski<button class="azurirajFirmu"(click)="promeniPolKor()" [disabled]="polNovo==''">Ažuriraj</button></span>
+        </div>
+        <div class="zahtevElem">
+          Adresa: <input type="text" [value]="izabraniKorisnik.adresa" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="adresaKorNovo" placeholder="Nova adresa"><button class="azurirajFirmu" (click)="promeniAdresuKor()" [disabled]="adresaKorNovo=='' || adresaKorNovo==izabraniKorisnik.adresa">Ažuriraj</button><span class="messageError"></span></span>
+        </div>
+        <div class="zahtevElem">
+          Telefon: <input type="text" [value]="izabraniKorisnik.telefon" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="telefonKorNovo" (change)="telefonCheck()" placeholder="Nov telefon"><button class="azurirajFirmu" (click)="promeniTelefonKor()" [disabled]="telefonKorNovo=='' || telefonKorNovo==izabraniKorisnik.telefon || messageTelefonError!=''">Ažuriraj</button><span class="messageError"><br>{{messageTelefonError}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Email: <input type="text" [value]="izabraniKorisnik.email" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="emailKorNovo" (change)="emailCheck()" placeholder="Nov email"><button class="azurirajFirmu" (click)="promeniEmailKor()" [disabled]="emailKorNovo=='' || emailKorNovo==izabraniKorisnik.email || messageEmailError!=''">Ažuriraj</button><span class="messageError"><br>{{messageEmailError}}</span></span>
+        </div>
+        <div class="zahtevElem" id="brojKartice">
+          Broj kartice: <input type="text" [value]="izabraniKorisnik.broj_kartice" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="brKarticeNovo" (change)="brKarticeCheck()" placeholder="Nova kartica"><button class="azurirajFirmu" (click)="promeniBrKarticeKor()" [disabled]="brKarticeNovo=='' || brKarticeNovo==izabraniKorisnik.broj_kartice || messageBrKarticeError!=''">Ažuriraj</button><span class="messageError"><br>{{messageBrKarticeError}}</span></span>
+        </div>
+        <div class="zahtevElem" id="brojKartice">
+          Status: <input type="text" [value]="izabraniKorisnik.status" readonly>
+        </div>
+        <div>
+          <button class="obradaDugme" id="aktivirajKorisnika" [disabled]="izabraniKorisnik.status=='aktivan'" (click)="aktivirajKorisnika()">Aktiviraj</button>
+          <button class="obradaDugme" id="deaktivirajKorisnika" [disabled]="izabraniKorisnik.status=='blokiran'" (click)="blokirajKorisnika()">Blokiraj</button>
+        </div>
+      </div>
+      <div *ngIf="izabraniKorisnik.korisnicko_ime == ''" id="messageNemaIzabrKor">Korisnik nije izabran.</div>
+    </div>
+  </div>
+  <hr id="splitter">
+  <div class="korisnici">
+    <div class="odabirKorisnika">
+      <h3 id="korisnikLabel">Firme</h3>
+      <select class="dropDownMenu" [(ngModel)]="izabranaFirma">
+        <option *ngFor="let f of firme" class="odabirPolje" [ngValue]="f">{{f.naziv}}</option>
+      </select>
+    </div>
+    <div class="podaciKorisnikaFirme" id="podaciKorisnika">
+      <h3 id="podaciKorisnikaFirmeLabel">Podaci o firmi:</h3>
+      <div id="prikazSelektovanog" *ngIf="izabranaFirma.naziv != ''">
+        <div class="zahtevElem">
+          Naziv: <input type="text" [value]="izabranaFirma.naziv" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="nazivNovo" (change)="nazivFirmeCheck()"
+              placeholder="Nov naziv"><button class="azurirajFirmu" (click)="promeniNazivFirme()"
+              [disabled]="nazivNovo=='' || nazivNovo==izabranaFirma.naziv || nazivFirmeErrorMess!=''">Ažuriraj</button><span
+              class="messageError"><br>{{nazivFirmeErrorMess}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Adresa: <input type="text" [value]="izabranaFirma.adresa" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="adresaNovo" placeholder="Nova adresa"><button class="azurirajFirmu"
+              (click)="promeniAdresuFirme()" [disabled]="adresaNovo=='' || adresaNovo==izabranaFirma.adresa">Ažuriraj</button><span
+              class="messageError"></span></span>
+        </div>
+        <div class="zahtevElem">
+          Ocena: <input type="text" [value]="izabranaFirma.ocena" readonly>
+          <span><input type="number" class="inputPolje" [(ngModel)]="ocenaNovo" placeholder="Nova ocena"><button
+              class="azurirajFirmu" (click)="promeniOcenuFirme()"
+              [disabled]="ocenaNovo==-1 || ocenaNovo==izabranaFirma.ocena || ocenaNovo==null">Ažuriraj</button><span
+              class="messageError"></span></span>
+        </div>
+        <div class="zahtevElem">
+          Telefon: <input type="text" [value]="izabranaFirma.telefon" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="telefonFirmaNovo" (change)="telefonFirmeCheck()"
+              placeholder="Nov telefon"><button class="azurirajFirmu" (click)="promeniTelefonFirme()"
+              [disabled]="telefonFirmaNovo=='' || telefonFirmaNovo==izabranaFirma.telefon || telefonErrorMess!=''">Ažuriraj</button><span
+              class="messageError"><br>{{telefonErrorMess}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Kontakt osoba: <input type="text" [value]="izabranaFirma.kontaktOsoba" readonly>
+          <span><input type="text" class="inputPolje" [(ngModel)]="kontaktOsobaNovo"
+              placeholder="Nova kontakt osoba"><button class="azurirajFirmu" (click)="promeniKontaktOsobu()"
+              [disabled]="kontaktOsobaNovo=='' || kontaktOsobaNovo==izabranaFirma.kontaktOsoba">Ažuriraj</button><span
+              class="messageError"><br></span></span>
+        </div>
+        <div class="zahtevElem">
+          Datum početka odmora: <input type="date" [value]="izabranaFirma.datumPocetkaOdmora" readonly>
+          <span><input type="date" class="inputPolje" [(ngModel)]="datumPocetkaOdmoraNovo" (change)="proveriDatume()"
+              placeholder="Datum početka odmora"><button class="azurirajFirmu" (click)="promeniDatumPocetakOdmora()"
+              [disabled]="datumPocetkaOdmoraNovo=='' || datumPocetkaOdmoraNovo==izabranaFirma.datumPocetkaOdmora || datumiErrorMess!=''">Ažuriraj</button><span
+              class="messageError"><br>{{datumiErrorMess}}</span></span>
+        </div>
+        <div class="zahtevElem">
+          Datum kraja odmora: <input type="date" [value]="izabranaFirma.datumKrajaOdmora" readonly>
+          <span><input type="date" class="inputPolje" [(ngModel)]="datumKrajaOdmoraNovo" (change)="proveriDatume()"
+              placeholder="Datum kraja odmora"><button class="azurirajFirmu" (click)="promeniDatumKrajaOdmora()"
+              [disabled]="datumKrajaOdmoraNovo=='' || datumKrajaOdmoraNovo==izabranaFirma.datumKrajaOdmora || datumiErrorMess!=''">Ažuriraj</button><span
+              class="messageError"><br>{{datumiErrorMess}}</span></span>
+        </div>
+        <div id="uslugeUnos" class="unosPodatakaElem">
+          <h3 id="uslugeNaslov">Usluge</h3>
+          <table>
+            <tr>
+              <th class="celijaTabele">Naziv</th>
+              <th class="celijaTabele">Cena</th>
+            </tr>
+            <tr *ngFor="let u of izabranaFirma.usluge">
+              <td class="celijaTabele">{{u.naziv}}</td>
+              <td class="celijaTabele" id="cenaUslKolona">{{u.cena}}</td>
+              <td><input type="text" placeholder="Naziv" [(ngModel)]="u.nazivAzur"></td>
+              <td><input type="number" placeholder="Cena" [(ngModel)]="u.cenaAzur"></td>
+              <td><button class="azurirajFirmu" (click)="azurirajUslugu(u)"
+                [disabled]="(u.cenaAzur==null && u.nazivAzur=='') || (u.cenaAzur==undefined && u.nazivAzur==undefined)">Ažuriraj</button></td>
+            </tr>
+          </table>
+          <hr id="uslugeIDodavUslugeSplitter">
+          <div class="dodavanjeUsluge">
+            <h3>Dodaj uslugu</h3>
+            <div>Naziv: <input type="text" [(ngModel)]="nazivUsluge"></div>
+            <div>Cena: <input type="number" min="0" [(ngModel)]="cenaUsluge"></div>
+            <div><button [disabled]="nazivUsluge=='' || cenaUsluge<0 || cenaUsluge==null" (click)="dodajUslugu()"
+                id="dodajUsluguButton">Dodaj</button></div>
+          </div>
+        </div>
+        <div id="komentari">
+          <h3 id="uslugeNaslov">Komentari</h3>
+          <table>
+            <tr>
+              <th class="celijaTabele">Korisnik</th>
+              <th class="celijaTabele">Sadrzaj</th>
+            </tr>
+            <tr *ngFor="let k of izabranaFirma.komentari">
+              <td class="celijaTabele">{{k.korisnik}}</td>
+              <td class="celijaTabele" id="cenaUslKolona">{{k.sadrzaj}}</td>
+              <td><button (click)="obrisiKomentar(k.korisnik, k.sadrzaj)">Obriši</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div *ngIf="izabranaFirma.naziv == ''" id="messageNemaIzabrKor">Firma nije izabrana.</div>
+    </div>
+  </div>
+</div>
+

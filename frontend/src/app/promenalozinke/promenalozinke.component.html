@@ -1,0 +1,43 @@
+<body>
+  <header class="header">
+    <div id="naslovContainer">
+      <h1 id="naslov">Vaša mašta - vaša bašta</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div class="contentContainer">
+      <div id="formContainer">
+        <h2>Promena lozinke</h2>
+        <div class="forma">
+          <div class="formElem" id="korIme">
+            Korisničko ime: <input type="text" [(ngModel)]="korIme" (change)="checkAgain()">
+          </div>
+          <div class="formElem" id="starLoz">
+            Stara lozinka: <input type="password" [(ngModel)]="staraLozinka" (change)="checkAgain()">
+          </div>
+          <div class="formElem" id="novaLoz">
+            Nova lozinka: <input type="password" [(ngModel)]="novaLozinka" (change)="checkPassword()">
+          </div>
+          <div class="formElem" id="ponLoz">
+            Ponoviti novu lozinku: <input type="password" [(ngModel)]="ponovljenaLozinka" (change)="proveriLozinke()">
+          </div>
+          <div>
+            <button (click)="promeniLozinku()" [disabled]="messageError!=''" id="promeniButton">Promeni lozinku</button>
+          </div>
+          <div id="messageErr">
+            {{messageError}}
+          </div>
+          <div id="messageSucc">
+            {{messageSucces}}
+          </div>
+        </div>
+      </div>
+      <div id="povratakP">
+        <a id="linkNaPocetnu" routerLink="">Povratak na početnu stranu</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p> Vaša mašta - vaša bašta <br> PIA projekat septembar 2024 <br> Elektrotehnički fakultet </p>
+  </footer>
+</body>

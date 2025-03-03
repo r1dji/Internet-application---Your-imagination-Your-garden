@@ -1,0 +1,11 @@
+
+#mainPasus {
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: lightgreen;
+}
+
+:host {
+  display: block;
+  min-width: 100vh;
+}

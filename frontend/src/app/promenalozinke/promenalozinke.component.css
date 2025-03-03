@@ -1,0 +1,89 @@
+#messageErr {
+  color: red;
+  font-size: 16px;
+}
+
+#messageSucc {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formElem {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.forma {
+  font-size: 16px;
+}
+
+#linkNaPocetnu {
+  color: blue;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#promeniButton {
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#formContainer {
+  background-color: rgb(187, 249, 187);
+  width: fit-content;
+  padding: 30px 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: left;
+  display: inline-block;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+.contentContainer {
+ /*  margin-left: 35%; */
+  margin-top: 50px;
+  text-align: center;
+}

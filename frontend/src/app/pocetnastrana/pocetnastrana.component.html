@@ -1,0 +1,92 @@
+
+<body>
+  <header class="header">
+    <div id="naslovContainer">
+      <h1 id="naslov">Vaša mašta - vaša bašta</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div class="firstContainer">
+      <div class="containerPrijava">
+        <div class="prijava">
+          <h3 class="prijavaNaslov">Prijava:</h3>
+          Korisničko ime: <input type="text" [(ngModel)]="korisnicko_ime" class="inputLogin"><br>
+          Lozinka: <input type="password" [(ngModel)]="lozinka" class="inputLogin"><br>
+          <button (click)="login()" id="loginPotvrdaDugme">Prijavi se</button><br>
+          <div class="infoMess">{{message}}</div>
+        </div>
+        <div class="registracija">
+          Vlasnik ste lokala i želite da koristite naše usluge. <a routerLink="vlasnikregister" id="registracijaLink">Registrujte se ovde.</a><br>
+        </div>
+        <div class="promenalozinke">
+          Promenu lozinke možete izvršiti <a routerLink="promenalozinke" id="registracijaLink">ovde.</a>
+        </div>
+        <div class="firmeLista">
+          <h2 id="naslovFirmeLista">Firme</h2>
+          <div class="formaPretragaISort">
+            <div class="pretragaForm">
+              <h4 id="naslovPretraga">Pretraga</h4>
+              Naziv firme: <input type="text" [(ngModel)]="nazivFirme"><br>
+              Adresa firme: <input type="text" [(ngModel)]="adresaFirme"><br>
+              <button (click)="pretraziFirmu()" id="pretragaDugme" (click)="pretraziFirmu()">Pretraži</button>
+            </div>
+            <div id="sortiranjeForm">
+              Sortiraj po:
+              <select id="opcijeSort" (change)="sortirajFirme()" [(ngModel)]="opcijaSort">
+                <option selected value="nosort">...</option>
+                <option value="sortNazivRas">Nazivu rastuće</option>
+                <option value="sortNazivOpa">Nazivu opadajuće</option>
+                <option value="sortAdresRas">Adresi rastuće</option>
+                <option value="sortAdresOpa">Adresi opadajuće</option>
+              </select>
+            </div>
+          </div>
+          <div *ngFor="let f of firmePretrazene" class="firmaElem">
+            <hr id="delilac">
+            <div class="firmaDetails">
+              <h3>
+                Naziv firme: {{f.naziv}}<br>
+                Adresa: {{f.adresa}}<br>
+              </h3>
+              <h4>Zaposleni:</h4>
+              <ul>
+                <li *ngFor="let z of f.zaposleni">{{z}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="basicCountInfo">
+        <div class="basicCountInfoElem" id="brojDekBasta">
+          <h3 class="naslovBrViD">Ukupan broj dekorisanih bašta</h3>
+          <span class="brojViD">{{posloviZavrseni.length}}</span>
+        </div>
+        <div class="basicCountInfoElem" id="brojVlasnika">
+          <h3 class="naslovBrViD">Broj prijavljenih vlasnika</h3>
+          <span class="brojViD">{{vlasnici.length}}</span>
+        </div>
+        <div class="basicCountInfoElem" id="brojDekoratera">
+          <h3 class="naslovBrViD">Broj prijavljenih dekoratera</h3>
+          <span class="brojViD">{{dekorateri.length}}</span>
+        </div>
+        <div class="basicCountInfoElem" id="brojPoslova24h">
+          <h3 class="naslovBrViD">Broj zakazanih poslova u poslednja 24h</h3>
+          <span class="brojViD">{{posloviZak24h.length}}</span>
+        </div>
+        <div class="basicCountInfoElem" id="brojPoslova7d">
+          <h3 class="naslovBrViD">Broj zakazanih poslova u poslednjih 7 dana</h3>
+          <span class="brojViD">{{posloviZak7d.length}}</span>
+        </div>
+        <div class="basicCountInfoElem" id="brojPoslova30d">
+          <h3 class="naslovBrViD">Broj zakazanih poslova u poslednjih 30 dana</h3>
+          <span class="brojViD">{{posloviZak30d.length}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p> Vaša mašta - vaša bašta <br> PIA projekat septembar 2024 <br> Elektrotehnički fakultet, Univerzitet u Beogradu </p>
+  </footer>
+</body>
+
+

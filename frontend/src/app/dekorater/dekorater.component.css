@@ -1,0 +1,74 @@
+#odjavaDugme {
+  height: fit-content;
+  width: fit-content;
+  margin-left: 90%;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(211, 211, 211);
+}
+
+.navbar {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 15px 0px;
+}
+
+.navbarelem {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbarelem:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#profilLink {
+  margin-left: 25%;
+}
+
+#statistikaLink {
+  margin-right: 25%;
+}

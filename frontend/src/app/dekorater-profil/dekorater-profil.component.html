@@ -1,0 +1,55 @@
+<div class="podaciKorisnikaFirme" id="podaciKorisnika">
+  <h3 id="podaciKorisnikaFirmeLabel">Profil</h3>
+  <div id="prikazSelektovanog" *ngIf="izabraniKorisnik.korisnicko_ime != ''">
+    <div id="profSlikaContainer">
+      <img [src]="izabraniKorisnik.profilna_slika" id="profSlika">
+      <span id="azuriranjeSlikeSpan"> Ažuriraj sliku: <input type="file" (change)="slikaCheck($event)"
+          [(ngModel)]="slikaNovoHolder"><button class="azurirajFirmu" id="slikaAzuriranje"
+          [disabled]="slikaNovoHolder==null || messageSlikaError!=''" (click)="promeniSlikuKor()">Ažuriraj</button><span
+          class="messageError"><br>{{messageSlikaError}}</span></span>
+    </div>
+    <div class="zahtevElem">
+      Ime: <input type="text" class="inputPolje" [value]="izabraniKorisnik.ime" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="imeNovo" placeholder="Novo ime"><button
+          class="azurirajFirmu" (click)="promeniImeKor()"
+          [disabled]="imeNovo=='' || imeNovo==izabraniKorisnik.ime">Ažuriraj</button><span
+          class="messageError"></span></span>
+    </div>
+    <div class="zahtevElem">
+      Prezime: <input type="text" class="inputPolje" [value]="izabraniKorisnik.prezime" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="prezimeNovo" placeholder="Novo prezime"><button
+          class="azurirajFirmu" (click)="promeniPrezimeKor()"
+          [disabled]="prezimeNovo=='' || prezimeNovo==izabraniKorisnik.prezime">Ažuriraj</button><span
+          class="messageError"></span></span>
+    </div>
+    <div class="zahtevElem">
+      Adresa: <input type="text" class="inputPolje" [value]="izabraniKorisnik.adresa" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="adresaKorNovo" placeholder="Nova adresa"><button
+          class="azurirajFirmu" (click)="promeniAdresuKor()"
+          [disabled]="adresaKorNovo=='' || adresaKorNovo==izabraniKorisnik.adresa">Ažuriraj</button><span
+          class="messageError"></span></span>
+    </div>
+    <div class="zahtevElem">
+      Telefon: <input type="text" class="inputPolje" [value]="izabraniKorisnik.telefon" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="telefonKorNovo" (change)="telefonCheck()"
+          placeholder="Nov telefon"><button class="azurirajFirmu" (click)="promeniTelefonKor()"
+          [disabled]="telefonKorNovo=='' || telefonKorNovo==izabraniKorisnik.telefon || messageTelefonError!=''">Ažuriraj</button><span
+          class="messageError"><br>{{messageTelefonError}}</span></span>
+    </div>
+    <div class="zahtevElem">
+      Email: <input type="text" class="inputPolje" [value]="izabraniKorisnik.email" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="emailKorNovo" (change)="emailCheck()"
+          placeholder="Nov email"><button class="azurirajFirmu" (click)="promeniEmailKor()"
+          [disabled]="emailKorNovo=='' || emailKorNovo==izabraniKorisnik.email || messageEmailError!=''">Ažuriraj</button><span
+          class="messageError"><br>{{messageEmailError}}</span></span>
+    </div>
+    <div class="zahtevElem" id="brojKartice">
+      Broj kartice: <input type="text" class="inputPolje" [value]="izabraniKorisnik.broj_kartice" readonly>
+      <span><input type="text" class="inputPolje" [(ngModel)]="brKarticeNovo" (change)="brKarticeCheck()"
+          placeholder="Nova kartica"><button class="azurirajFirmu" (click)="promeniBrKarticeKor()"
+          [disabled]="brKarticeNovo=='' || brKarticeNovo==izabraniKorisnik.broj_kartice || messageBrKarticeError!=''">Ažuriraj</button><span
+          class="messageError"><br>{{messageBrKarticeError}}</span></span>
+    </div>
+  </div>
+</div>
+

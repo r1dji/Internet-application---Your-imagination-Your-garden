@@ -1,0 +1,52 @@
+<div id="content">
+  <div id="pristiglaZakazivanja">
+    <h3 id="naslovZakazivanja">Pristigla zakazivanja</h3>
+    <div id="zakazivanjaContainer">
+      <div id="zakazivanje" *ngFor="let z of posloviNeobradjeni">
+        <div id="vlasnikContainer" class="podaciPosla">Vlasnik: {{z.vlasnikImePrezime}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Datum zakazivanja: {{z.datumZakazivanja}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Datum rada: {{z.datumRada}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Tip bašte: {{z.tipBaste}}</div>
+        <div *ngIf="z.tipBaste=='privatna basta'">
+          <div>Kvadratura bazen: {{z.kvadraturaBazenPrivBasta}}</div>
+          <div>Kvadratura zelenilo: {{z.kvadraturaZeleniloPrivBasta}}</div>
+          <div>Kvadratura lezaljke i stolovi: {{z.kvadraturaLezaljkeStoloviPrivBasta}}</div>
+        </div>
+        <div *ngIf="z.tipBaste=='basta restorana'">
+          <div>Kvadratura fontana: {{z.kvadraturaFontanaRestBasta}}</div>
+          <div>Kvadratura zelenilo: {{z.kvadraturaZeleniloRestBasta}}</div>
+          <div>Broj stolova i stolica: {{z.brojStolovaStolicaRestBasta}}</div>
+        </div>
+        <div id="responseForm">
+          <div id="prihvatiContainer"><button id="prihvatiButton" [disabled]="z.datumZavrsetkaTMP==null || z.datumZavrsetkaTMP==undefined || z.datumZavrsetkaTMP=='' || z.datumiErrorMess!=''" (click)="prihvatiPosao(z)">Prihvati</button> <input type="date" [(ngModel)]="z.datumZavrsetkaTMP" (change)="checkDatumZavrs(z)"> (Uneti procenjeno vreme završetka) <span id="datumiErrorMess">{{z.datumiErrorMess}}</span></div>
+          <div id="odbaciContainer"><button id="odbaciButton" [disabled]="z.komentarOdbijanja=='' || z.komentarOdbijanja==undefined" (click)="odbaciPosao(z)">Odbaci</button> Komentar: <input type="text" [(ngModel)]="z.komentarOdbijanja"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id="prihvZakazivanja">
+    <h3 id="naslovZakazivanja">Prihvaćeni poslovi</h3>
+    <div id="zakazivanjaContainer">
+      <div id="zakazivanje" *ngFor="let pp of prihvaceniPoslovi">
+        <div id="vlasnikContainer" class="podaciPosla">Vlasnik: {{pp.vlasnikImePrezime}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Datum rada: {{pp.datumRada}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Tip bašte: {{pp.tipBaste}}</div>
+        <div id="datumZakContainer" class="podaciPosla">Datum završetka: {{pp.datumZavrsetka}}</div>
+        <div *ngIf="pp.tipBaste=='privatna basta'">
+          <div>Kvadratura bazen: {{pp.kvadraturaBazenPrivBasta}}</div>
+          <div>Kvadratura zelenilo: {{pp.kvadraturaZeleniloPrivBasta}}</div>
+          <div>Kvadratura lezaljke i stolovi: {{pp.kvadraturaLezaljkeStoloviPrivBasta}}</div>
+        </div>
+        <div *ngIf="pp.tipBaste=='basta restorana'">
+          <div>Kvadratura fontana: {{pp.kvadraturaFontanaRestBasta}}</div>
+          <div>Kvadratura zelenilo: {{pp.kvadraturaZeleniloRestBasta}}</div>
+          <div>Broj stolova i stolica: {{pp.brojStolovaStolicaRestBasta}}</div>
+        </div>
+        <div id="responseForm">
+          <div id="prihvatiContainer"><button id="prihvatiButton" (click)="zavrsiPosao(pp)">Posao završen</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,154 @@
+
+.odabirKorisnika {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.podaciKorisnikaFirme {
+  margin-right: 35%;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+#korisnikLabel {
+  font-size: 24px;
+}
+
+#firmaLabel {
+  font-size: 24px;
+}
+
+#podaciKorisnikaFirmeLabel {
+  font-size: 24px;
+}
+
+.odabirFirme {
+  margin-top: 100px;
+}
+
+.dropDownMenu {
+  font-size: 18px;
+  min-width: 300px;
+  max-width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  border-radius: 5px;
+}
+
+.zahtevElem {
+  margin-bottom: 10px;
+}
+
+#profSlika {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0px;
+}
+
+.korisnici {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firme {
+  display: flex;
+  justify-content: space-between;
+}
+
+#splitter {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 95%;
+  text-align: center;
+  color: black;
+}
+
+#podaciFirme {
+  margin-right: 45%;
+}
+
+#podaciKorisnika {
+  margin-right: 25%;
+}
+
+.obradaDugme {
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 2px 8px;
+}
+
+.azurirajFirmu, .azurirajKorisnika {
+  background-color: rgb(235, 244, 138);
+  margin-left: 15px;
+}
+
+.azurirajFirmu:hover, .azurirajKorisnika:hover {
+  transform: scale(1.1);
+}
+
+.azurirajFirmu:hover:disabled, .azurirajKorisnika:hover:disabled {
+  transform: scale(1);
+}
+
+#deaktivirajFirmu, #deaktivirajKorisnika {
+  background-color: rgb(250, 160, 160);
+}
+
+#deaktivirajFirmu:hover, #deaktivirajKorisnika:hover {
+  transform: scale(1.1);
+}
+
+#aktivirajFirmu, #aktivirajKorisnika {
+  background-color: rgb(12, 245, 63);
+}
+
+#aktivirajFirmu:hover, #aktivirajKorisnika:hover {
+  transform: scale(1.1);
+}
+
+#aktivirajFirmu:disabled:hover, #aktivirajKorisnika:disabled:hover {
+  transform: scale(1);
+}
+
+#deaktivirajFirmu:disabled:hover, #deaktivirajKorisnika:disabled:hover {
+  transform: scale(1);
+}
+
+#messageNemaIzabrKor {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.inputPolje {
+  margin-left: 15px;
+}
+
+#azuriranjeSlikeSpan {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#profSlikaContainer {
+  margin-bottom: 20px;
+}
+
+#slikaAzuriranje {
+  margin-left: 0px;
+}
+
+.messageError {
+  color: red;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.celijaTabele {
+  padding: 2px 10px;
+}
+
+#cenaUslKolona {
+  text-align: center;
+}

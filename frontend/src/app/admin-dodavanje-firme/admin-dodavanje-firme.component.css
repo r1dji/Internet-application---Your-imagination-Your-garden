@@ -1,0 +1,185 @@
+#mapContainer {
+  height: 300px;
+  width: 600px;
+  margin-top: 10px;
+}
+
+#unosPodataka {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+  margin-left: 18%;
+  min-width: fit-content;
+}
+
+.unosPodatakaElem {
+  margin-top: 15px;
+  min-width: fit-content;
+}
+
+#outContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+#dodavanjeFirmeNaslov {
+  font-size: 24px;
+  margin-left: 5%;
+  width: fit-content;
+}
+
+#adresaDisplay {
+  font-size: 14px;
+  width: 100%;
+}
+
+#adresaUnos {
+  min-width: fit-content;
+}
+
+#korImeInput {
+  margin-left: 5px;
+  width: 60%;
+}
+
+#kontaktOsobaInput {
+  margin-left: 5px;
+  width: 60%;
+}
+
+.celijaTabele {
+  padding: 2px 10px;
+}
+
+#uslugeIDodavUslugeSplitter {
+  width: 100%;
+}
+
+.dodavanjeUsluge {
+  padding-bottom: 15px;
+}
+
+#cenaUslKolona {
+  text-align: center;
+}
+
+#uslugeNaslov {
+  margin-bottom: 7px;
+}
+
+#dodajUsluguButton {
+  margin-top: 10px;
+}
+
+#desniDeo {
+  margin-right: 5%;
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 20%;
+}
+
+#leviDeo {
+  margin-left: 5%;
+}
+
+#datumiErrMess {
+  color: red;
+  width: fit-content;
+}
+
+#formDiv {
+  font-size: 18px;
+  margin-left: 25%;
+  background-color: white;
+  padding: 20px 30px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.formelem {
+  margin-bottom: 10px;
+}
+
+#registerButton {
+  font-size: 16px;
+  margin-left: 45%;
+  margin-top: 20px;
+  padding: 5px 8px;
+}
+
+.errorMess {
+  color: red;
+  font-size: 16px;
+}
+
+.infoMess {
+  color: grey;
+  font-size: 15px;
+}
+
+.cardLogo {
+  margin-left: 30px;
+  transform: translateY(10px);
+}
+
+.succesMess {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+#naslovDodavanjeDekoratera {
+  margin-left: 12%;
+  font-size: 22px;
+}
+
+#biranjeFirme {
+  font-size: 15px;
+}
+
+#dodavanjeDekoratera {
+  margin-top: 20px;
+  padding-bottom: 5%;
+}
+
+#pageSplitter {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#naslovIPotvrda {
+  display: flex;
+  align-items: center;
+}
+
+#dodajDugmeContainer {
+  margin-left: 10%;
+}
+
+#dodajFirmuDugme {
+  font-size: 16px;
+}
+
+#dodajFirmuDugme:hover:not(:disabled) {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+#messDodFirme {
+  margin-left: 5%;
+  margin-right: 0%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#telefonFirmeErrMess {
+  color: red;
+}
+
+#nazivFirmeErrorMess {
+  color: red;
+}
+
+

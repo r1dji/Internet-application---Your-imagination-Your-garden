@@ -1,0 +1,57 @@
+#content {
+  margin-left: 15%;
+}
+
+#naslovZakazivanja {
+  font-size: 26px;
+}
+
+#zakazivanjaContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 14%;
+}
+
+#zakazivanje {
+  width: 25%;
+  background-color: white;
+  height: fit-content;
+  margin-top: 15px;
+  width: 60%;
+  padding: 20px 10px;
+}
+
+.podaciPosla {
+  font-size: 20px;
+}
+
+#responseForm {
+  margin-top: 12px;
+}
+
+#prihvatiContainer {
+  margin-bottom: 10px;
+}
+
+#prihvatiButton {
+  margin-right: 5px;
+  font-size: 15px;
+  background-color: rgb(0, 255, 0);
+}
+
+#prihvatiButton:hover:not(:disabled) {
+  background-color: rgb(0, 144, 0);
+}
+
+#odbaciButton:hover:not(:disabled) {
+  background-color: red;
+}
+
+#odbaciButton {
+  background-color: rgb(255, 72, 72);
+}
+
+#datumiErrorMess {
+  color: red;
+}

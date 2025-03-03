@@ -1,0 +1,85 @@
+.firmeLista {
+  font-size: 18px;
+  margin-left: 0%;
+  margin-top: 0px;
+  background-color: white;
+  border-radius: 15px;
+  padding-bottom: 25px;
+}
+
+#naslovFirmeLista {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+#delilac {
+  width: 90%;
+  margin-left: 0;
+}
+
+.firmaDetails {
+  margin-left: 20px;
+}
+
+#naslovPretraga {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#sortiranjeForm {
+  margin-top: 10px;
+}
+
+#pretragaDugme {
+  padding: 1px 10px;
+  font-size: 14px;
+}
+
+.firmaElem {
+  width: 100%;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+#levideo {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 10%;
+}
+
+#desnideo {
+  margin-right: 15%;
+  width: 50%;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+#linZakContainer {
+  font-size: 22px;
+  height: fit-content;
+  margin-top: 60%;
+}
+
+#linkZak {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#cellSpliter {
+  display: flex;
+  justify-content: space-between;
+}
+
+#linkZakazivanje {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: 15%;
+}

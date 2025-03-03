@@ -1,0 +1,73 @@
+.infoMess {
+  color: red;
+}
+
+#prijavaForm {
+  font-size: 18px;
+}
+
+#loginPotvrdaDugme {
+  margin-top: 3px;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+
+#adminLoginNaslov {
+  margin-bottom: 10px;
+}
+
+.inputLogin {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:host {
+  display: block;
+  min-width: 100vh;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+#loginFormContainer {
+  margin-left: 5%;
+  margin-top: 35px;
+}

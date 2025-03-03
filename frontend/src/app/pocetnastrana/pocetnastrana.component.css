@@ -1,0 +1,180 @@
+.infoMess {
+  color: red;
+  font-size: 16px;
+}
+
+#naslovStrane {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.prijava {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.prijavaNaslov {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.containerPrijava {
+  margin-left: 5%;
+  margin-top: 0px;
+  width: 50%;
+  height: fit-content;
+  margin-bottom: 0px;
+}
+
+.registracija {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#loginPotvrdaDugme {
+  margin-top: 3px;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+
+.inputLogin {
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+
+.promenalozinke {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  height: fit-content;
+}
+
+.basicCountInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: fit-content;
+  margin-top: 30px;
+  margin-right: 5%;
+  width: 55%;
+}
+
+.basicCountInfoElem {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(225, 225, 225);
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.brojViD {
+  font-size: 80px;
+}
+
+.naslovBrViD {
+  font-size: 25px;
+  text-align: center;
+}
+
+.firmeLista {
+  font-size: 18px;
+  margin-top: 80px;
+  background-color: white;
+  width: 80%;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+#naslovFirmeLista {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+#delilac {
+  width: 90%;
+  margin-left: 0;
+}
+
+.firmaDetails {
+  margin-left: 20px;
+}
+
+#naslovPretraga {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+#sortiranjeForm {
+  margin-top: 10px;
+}
+
+#pretragaDugme {
+  padding: 1px 10px;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+.firmaElem {
+  width: 100%;
+}
+
+#registracijaLink {
+  color: blue;
+  text-decoration: none;
+}

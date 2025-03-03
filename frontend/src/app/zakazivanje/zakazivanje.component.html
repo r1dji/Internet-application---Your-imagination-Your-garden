@@ -1,0 +1,131 @@
+<body>
+  <header class="header">
+    <div id="naslovContainer">
+      <h1 id="naslov">Vaša mašta - vaša bašta</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div id="holder">
+      <div id="podaciFirme">
+        <h2>Podaci o firmi</h2>
+        <div class="basicInfoFirma">Naziv: {{izabranaFirma.naziv}}</div>
+        <div class="basicInfoFirma">Adresa: {{izabranaFirma.adresa}}</div>
+        <div class="basicInfoFirma">Telefon: {{izabranaFirma.telefon}}</div>
+        <div>
+          <h3 id="naslovUsluge">Usluge</h3>
+          <table>
+            <tr>
+              <th>Naziv</th>
+              <th>Cena</th>
+            </tr>
+            <tr *ngFor="let u of izabranaFirma.usluge">
+              <td>{{u.naziv}}</td>
+              <td id="cellCena">{{u.cena}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="formContainer">
+        <h2 id="naslovZakazivanje">Zakazivanje</h2>
+        <div *ngIf="step==1" id="form1" class="forms">
+          <div class="formElem">
+            Datum rada: <input type="datetime-local" class="inputFields" [(ngModel)]="datum" (change)="checkDatum()">
+            <div id="datumErrorMess">
+              {{messErrorDatum}}
+            </div>
+          </div>
+          <div class="formElem">
+            Kvadratura: <input type="number" class="inputFields" [(ngModel)]="kvadratura" (change)="checkKvadratura()">
+            <div class="errorMess">
+              {{messErrorKvadratura}}
+            </div>
+          </div>
+          <div class="formElem">
+            Tip bašte: <span class="tipBiranje"><input type="radio" name="tipbaste" value="privatna basta" [(ngModel)]="tipBaste"> privatna bašta</span>
+            <span class="tipBiranje" id="bastaRestRad"><input type="radio" name="tipbaste" value="basta restorana" [(ngModel)]="tipBaste"> bašta restorana</span>
+          </div>
+          <div><button (click)="changeLevelTo2()" id="dugmeNext" [disabled]="messErrorKvadratura!='' || tipBaste=='' || messErrorDatum!='' || datum==null">sledeći korak</button></div>
+        </div>
+        <div *ngIf="step==2 && tipBaste=='privatna basta'" class="forms">
+          <div class="formElem">
+            Kvadratura bazena: <input type="number" [(ngModel)]="kvadraturaBazena" class="inputFields">
+          </div>
+          <div class="formElem">
+            Kvadratura bašte pod zelenilom: <input type="number" [(ngModel)]="kvadraturaZelenilaPB" class="inputFields">
+          </div>
+          <div class="formElem">
+            Kvadratura bašte pod ležaljkama i stolicama: <input type="number" [(ngModel)]="kvadraturaLezIStol" class="inputFields">
+          </div>
+          <div class="formElem">
+            <textarea [(ngModel)]="dodatanKomentarBR" rows="4" cols="50" placeholder="Dodatni zahtevi/komentari"></textarea>
+          </div>
+          <div clas="formElem" id="uslugeElem">
+            <div id="uslugeNaslov">
+              Izaberite usluge:
+            </div>
+            <div *ngFor="let u of izabranaFirma.usluge" class="uslugaElem">
+              {{u.naziv}} <input type="checkbox" [(ngModel)]="u.checked">
+            </div>
+          </div>
+          <div class="formElem" id="skicaBaste">
+            Učitajte skicu bašte: <input type="file" accept=".json" (change)="ucitanFileBasta($event)" [(ngModel)]="fileHolderPB">
+            <div id="bastaPrikacContainer" *ngIf="fileHolderPB != null">
+              <canvas id="bastaPrikaz">
+
+              </canvas>
+            </div>
+          </div>
+          <div><span class="errorMess">{{errorMess}}</span></div>
+          <div id="dugmici">
+            <button (click)="changeLevelTo1()" id="dugmeBack">nazad</button>
+            <button id="dugmeZakazi" [disabled]="kvadraturaZelenilaPB==0 || kvadraturaBazena==0 || kvadraturaLezIStol==0 || fileHolderPB==null" (click)="dodajPosao()">ZAKAŽI</button>
+          </div>
+          <div id="succMessContainer">
+            {{succesMess}}
+          </div>
+        </div>
+        <div *ngIf="step==2 && tipBaste=='basta restorana'" class="forms">
+          <div class="formElem">
+            Kvadratura fontane: <input type="number" [(ngModel)]="kvadraturaFontana" class="inputFields">
+          </div>
+          <div class="formElem">
+            Kvadratura bašte pod zelenilom: <input type="number" [(ngModel)]="kvadraturaZeleniloBR" class="inputFields">
+          </div>
+          <div class="formElem">
+            Broj stolova i stolica: <input type="number" [(ngModel)]="brojStolovaIStoli" class="inputFields">
+          </div>
+          <div class="formElem">
+            <textarea [(ngModel)]="dodatanKomentarBR" rows="4" cols="50" placeholder="Dodatni zahtevi/komentari"></textarea>
+          </div>
+          <div clas="formElem" id="uslugeElem">
+            <div id="uslugeNaslov">
+              Izaberite usluge:
+            </div>
+            <div *ngFor="let u of izabranaFirma.usluge" class="uslugaElem">
+              {{u.naziv}} <input type="checkbox" [(ngModel)]="u.checked">
+            </div>
+          </div>
+          <div class="formElem" id="skicaBaste">
+            Učitajte skicu bašte: <input type="file" accept=".json" (change)="ucitanFileBasta($event)" [(ngModel)]="fileHolderBR">
+            <div id="bastaPrikacContainer" *ngIf="fileHolderBR != null">
+              <canvas id="bastaPrikaz">
+
+              </canvas>
+            </div>
+          </div>
+          <div><span class="errorMess">{{errorMess}}</span></div>
+          <div id="dugmici">
+            <button (click)="changeLevelTo1()" id="dugmeBack">nazad</button>
+            <button id="dugmeZakazi" [disabled]="kvadraturaZeleniloBR==0 || kvadraturaFontana==0 || brojStolovaIStoli==0 || fileHolderBR==null" (click)="dodajPosao()">ZAKAŽI</button>
+          </div>
+          <div id="succMessContainer">
+            {{succesMess}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p> Vaša mašta - vaša bašta <br> PIA projekat septembar 2024 <br> Elektrotehnički fakultet, Univerzitet u Beogradu </p>
+  </footer>
+</body>

@@ -1,0 +1,590 @@
+[
+{
+  "IdP": 1,
+  "firma": "Firma 1",
+  "dekorater": "dekorater2",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-1-10",
+  "datumRada": "2024-01-12",
+  "datumZavrsetka": "2024-01-12",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 15,
+  "kvadraturaZeleniloPrivBasta": 20,
+  "kvadraturaLezaljkeStoloviPrivBasta": 18,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 2,
+  "firma": "Firma 1",
+  "dekorater": "dekorater1",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-9-1",
+  "datumRada": "2024-09-10",
+  "datumZavrsetka": "2024-09-10",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 15,
+  "kvadraturaZeleniloPrivBasta": 20,
+  "kvadraturaLezaljkeStoloviPrivBasta": 18,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 3,
+  "firma": "Firma 1",
+  "dekorater": "dekorater1",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2023-12-25",
+  "datumRada": "2023-12-26",
+  "datumZavrsetka": "2023-12-26",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 15,
+  "kvadraturaZeleniloRestBasta": 20,
+  "brojStolovaStolicaRestBasta": 18,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 4,
+  "firma": "Firma 1",
+  "dekorater": "dekorater2",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2023-12-27",
+  "datumRada": "2023-12-27",
+  "datumZavrsetka": "2023-12-27",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 11,
+  "kvadraturaZeleniloPrivBasta": 22,
+  "kvadraturaLezaljkeStoloviPrivBasta": 33,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 5,
+  "firma": "Firma 1",
+  "dekorater": "dekorater1",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-09-23",
+  "datumRada": "2024-09-23",
+  "datumZavrsetka": "2024-09-23",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 11,
+  "kvadraturaZeleniloPrivBasta": 22,
+  "kvadraturaLezaljkeStoloviPrivBasta": 33,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 6,
+  "firma": "Firma 1",
+  "dekorater": "dekorater1",
+  "vlasnik": "vlasnik2novo",
+  "status": "zakazan",
+  "datumZakazivanja": "2024-09-23",
+  "datumRada": "2024-09-28",
+  "datumZavrsetka": "2024-10-05",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 33,
+  "kvadraturaZeleniloRestBasta": 44,
+  "brojStolovaStolicaRestBasta": 55,
+  "usluge": [
+    {
+      "naziv": "uredjenje bazena",
+      "cena": 40,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "sredjivanje betonskih povrsina",
+      "cena": 16,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    },
+    {
+      "naziv": "ukrasne trake za bastu",
+      "cena": 15,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 7,
+  "firma": "Firma 2",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2023-2-16",
+  "datumRada": "2023-02-18",
+  "datumZavrsetka": "2023-02-20",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 28,
+  "kvadraturaZeleniloRestBasta": 6,
+  "brojStolovaStolicaRestBasta": 17,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 8,
+  "firma": "Firma 2",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik5",
+  "status": "zavrsen",
+  "datumZakazivanja": "2023-2-16",
+  "datumRada": "2023-02-18",
+  "datumZavrsetka": "2023-02-20",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 28,
+  "kvadraturaZeleniloRestBasta": 6,
+  "brojStolovaStolicaRestBasta": 17,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 9,
+  "firma": "Firma 2",
+  "dekorater": "dekor4",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-9-16",
+  "datumRada": "2024-09-18",
+  "datumZavrsetka": "2024-09-20",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 28,
+  "kvadraturaZeleniloRestBasta": 6,
+  "brojStolovaStolicaRestBasta": 17,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 10,
+  "firma": "Firma 2",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-9-16",
+  "datumRada": "2024-09-18",
+  "datumZavrsetka": "2024-09-18",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 28,
+  "kvadraturaZeleniloRestBasta": 6,
+  "brojStolovaStolicaRestBasta": 17,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 11,
+  "firma": "Firma 2",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-1-11",
+  "datumRada": "2024-01-12",
+  "datumZavrsetka": "2024-01-12",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 34,
+  "kvadraturaZeleniloPrivBasta": 56,
+  "kvadraturaLezaljkeStoloviPrivBasta": 78,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 12,
+  "firma": "Firma 2",
+  "dekorater": "",
+  "vlasnik": "vlasnik5",
+  "status": "u obradi",
+  "datumZakazivanja": "2024-9-23",
+  "datumRada": "2024-09-28",
+  "datumZavrsetka": "",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 34,
+  "kvadraturaZeleniloPrivBasta": 56,
+  "kvadraturaLezaljkeStoloviPrivBasta": 78,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "svecani program",
+      "cena": 45,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 13,
+  "firma": "Firma 3",
+  "dekorater": "",
+  "vlasnik": "vlasnik5",
+  "status": "u obradi",
+  "datumZakazivanja": "2024-09-21",
+  "datumRada": "2024-09-26",
+  "datumZavrsetka": "",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 2,
+  "kvadraturaZeleniloRestBasta": 12,
+  "brojStolovaStolicaRestBasta": 25,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+},
+{
+  "IdP": 14,
+  "firma": "Firma 3",
+  "dekorater": "",
+  "vlasnik": "vlasnik2novo",
+  "status": "u obradi",
+  "datumZakazivanja": "2024-09-20",
+  "datumRada": "2024-09-24",
+  "datumZavrsetka": "",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 2,
+  "kvadraturaZeleniloPrivBasta": 12,
+  "kvadraturaLezaljkeStoloviPrivBasta": 31,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+},
+{
+  "IdP": 15,
+  "firma": "Firma 3",
+  "dekorater": "",
+  "vlasnik": "vlasnik5",
+  "status": "u obradi",
+  "datumZakazivanja": "2024-09-21",
+  "datumRada": "2024-09-25",
+  "datumZavrsetka": "",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 25,
+  "kvadraturaZeleniloRestBasta": 57,
+  "brojStolovaStolicaRestBasta": 12,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+},
+{
+  "IdP": 16,
+  "firma": "Firma 3",
+  "dekorater": "",
+  "vlasnik": "vlasnik5",
+  "status": "u obradi",
+  "datumZakazivanja": "2024-09-12",
+  "datumRada": "2024-09-26",
+  "datumZavrsetka": "",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 12,
+  "kvadraturaZeleniloPrivBasta": 12,
+  "kvadraturaLezaljkeStoloviPrivBasta": 23,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+},
+{
+  "IdP": 17,
+  "firma": "Firma 3",
+  "dekorater": "dekorater5",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-04-13",
+  "datumRada": "2024-04-22",
+  "datumZavrsetka": "2024-04-22",
+  "tipBaste": "basta restorana",
+  "kvadraturaBazenPrivBasta": -1,
+  "kvadraturaZeleniloPrivBasta": -1,
+  "kvadraturaLezaljkeStoloviPrivBasta": -1,
+  "kvadraturaFontanaRestBasta": 12,
+  "kvadraturaZeleniloRestBasta": 34,
+  "brojStolovaStolicaRestBasta": 56,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+},
+{
+  "IdP": 18,
+  "firma": "Firma 3",
+  "dekorater": "dekorater6",
+  "vlasnik": "vlasnik2novo",
+  "status": "zavrsen",
+  "datumZakazivanja": "2024-03-14",
+  "datumRada": "2024-03-16",
+  "datumZavrsetka": "2024-03-16",
+  "tipBaste": "privatna basta",
+  "kvadraturaBazenPrivBasta": 12,
+  "kvadraturaZeleniloPrivBasta": 12,
+  "kvadraturaLezaljkeStoloviPrivBasta": 23,
+  "kvadraturaFontanaRestBasta": -1,
+  "kvadraturaZeleniloRestBasta": -1,
+  "brojStolovaStolicaRestBasta": -1,
+  "usluge": [
+    {
+      "naziv": "cvetni program",
+      "cena": 33,
+      "nazivAzur": "",
+      "cenaAzur": null,
+      "checked": false
+    }
+  ],
+  "odbili": [],
+  "brVodenihPovrsina": 2
+}
+]

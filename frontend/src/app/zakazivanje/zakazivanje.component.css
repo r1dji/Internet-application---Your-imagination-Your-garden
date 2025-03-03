@@ -1,0 +1,237 @@
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+.basicInfoFirma {
+  margin-bottom: 5px;
+}
+
+table {
+  border-spacing: 15px;
+  margin-top: 5;
+}
+
+#cellCena {
+  text-align: center;
+}
+
+#naslovUsluge {
+  margin-bottom: 0px;
+}
+
+#podaciFirme {
+  font-size: 18px;
+  margin-left: 15%;
+}
+
+table th {
+  margin-bottom: 2px;
+  padding-bottom: 0px;
+}
+
+table td {
+  margin-top: 0px;
+}
+
+#holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+#formContainer {
+  margin-right: 5%;
+  margin-top: 2%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+#datumErrorMess {
+  color: red;
+  font-size: 16px;
+}
+
+.uslugaElem {
+  margin-bottom: 7px;
+}
+
+.errorMess {
+  font-size: 16px;
+  color: red;
+}
+
+.forms {
+  font-size: 20px;
+}
+
+.inputFields {
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#naslovZakazivanje {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.errorMess {
+  font: 16;
+  color: red;
+}
+
+#succesMess {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.formElem {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.uslugaElem {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.tipBiranje {
+  margin-left: 30px;
+}
+
+#bastaRestRad {
+  margin-left: 50px;
+}
+
+#skicaBasteDeo {
+  margin-top: 35px;
+}
+
+#dugmeNext {
+  font-size: 16px;
+  margin-left: 80%;
+  color: white;
+  background-color: rgb(2, 202, 2);
+  padding: 5px;
+  margin-top: 40px;
+}
+
+#dugmeNext:hover {
+  background-color: green;
+}
+
+#dugmeNext:disabled {
+  background-color: rgb(120, 120, 120);
+}
+
+#dugmeBack {
+  font-size: 16px;
+  color: black;
+  background-color: rgb(253, 93, 125);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#dugmeBack:hover {
+  background-color: green;
+}
+
+#skicaBaste {
+  margin-top: 35px;
+}
+
+#dugmici {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#dugmeZakazi {
+  font-size: 22px;
+  margin-right: 43%;
+  color: white;
+  background-color: rgb(2, 202, 2);
+  padding: 10px;
+}
+
+#dugmeZakazi:hover {
+  background-color: green;
+}
+
+#dugmeZakazi:disabled {
+  background-color: rgb(120, 120, 120);
+}
+
+#bastaPrikaz {
+  width: 100%;
+  height: 100%;
+}
+
+#bastaPrikacContainer {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+}
+
+#succMessContainer {
+  color: green;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.errorMess {
+  color: red;
+  font-size: 16px;
+}
+
+#uslugeNaslov {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,47 @@
+<div id="content">
+  <div id="levideo">
+    <h2 id="naslovFirmeLista">Firme</h2>
+    <div class="formaPretragaISort">
+      <div class="pretragaForm">
+        <h4 id="naslovPretraga">Pretraga</h4>
+        Naziv firme: <input type="text" [(ngModel)]="nazivFirme"><br>
+        Adresa firme: <input type="text" [(ngModel)]="adresaFirme"><br>
+        <button (click)="pretraziFirmu()" id="pretragaDugme" (click)="pretraziFirmu()">Pretraži</button>
+      </div>
+      <div id="sortiranjeForm">
+        Sortiraj po:
+        <select id="opcijeSort" (change)="sortirajFirme()" [(ngModel)]="opcijaSort">
+          <option selected value="nosort">...</option>
+          <option value="sortNazivRas">Nazivu rastuće</option>
+          <option value="sortNazivOpa">Nazivu opadajuće</option>
+          <option value="sortAdresRas">Adresi rastuće</option>
+          <option value="sortAdresOpa">Adresi opadajuće</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div id="desnideo">
+    <div class="firmeLista">
+      <div *ngFor="let f of firmePretrazene" class="firmaElem">
+        <hr id="delilac">
+        <div id="cellSpliter">
+          <div class="firmaDetails">
+            <h3>
+              Naziv firme: {{f.naziv}}<br>
+              Adresa: {{f.adresa}}<br>
+            </h3>
+            <h4>Zaposleni:</h4>
+            <ul *ngIf="f.zaposleni.length>0">
+              <li *ngFor="let z of f.zaposleni">{{z}}</li>
+            </ul>
+            <div *ngIf="f.zaposleni.length==0">Nema zaposlenih</div>
+          </div>
+          <div id="linkZakazivanje">
+            <span id="linZakContainer"><a routerLink="/zakazivanje" id="linkZak" (click)="memFirmu(f.naziv)">Zakaži uređivanje</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

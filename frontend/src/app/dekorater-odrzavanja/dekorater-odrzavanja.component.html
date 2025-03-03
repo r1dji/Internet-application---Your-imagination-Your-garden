@@ -1,0 +1,18 @@
+<div id="content">
+  <h3 id="naslovZakazivanja">Održavanja</h3>
+  <div id="zakazivanjaContainer">
+    <div id="zakazivanje" *ngFor="let o of neobrOdrzavanja">
+      <div id="vlasnikContainer" class="podaciPosla">Vlasnik: {{o.vlasnikImePrezime}}</div>
+      <div id="datumZakContainer" class="podaciPosla">Datum zakazivanja: {{o.datumPravljenjaZahtevaOdrzavanja}}</div>
+      <div id="datumZakContainer" class="podaciPosla">Broj vodenih površina: {{o.brVodenihPovrsina}}</div>
+      <div id="responseForm">
+        <div id="prihvatiContainer"><button id="prihvatiButton"
+            [disabled]="o.datumiErrorMess != ''"
+            (click)="prihvatiOdrzavanje(o)">Prihvati</button> <input type="datetime-local" [(ngModel)]="o.datumZavrsetkaPom"
+            (change)="checkDatumZavrs(o)"> (Uneti procenjeno vreme završetka) <span
+            id="datumiErrorMess"><br>{{o.datumiErrorMess}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

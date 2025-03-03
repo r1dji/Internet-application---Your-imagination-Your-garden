@@ -1,0 +1,118 @@
+#formDiv {
+  font-size: 18px;
+  background-color: rgb(189, 244, 189);
+  width: fit-content;
+  padding: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 18px;
+  display: inline-block;
+  text-align: left;
+}
+
+.formelem {
+  margin-bottom: 10px;
+}
+
+#registerButton {
+  font-size: 16px;
+  margin-top: 40px;
+  padding: 5px 8px;
+}
+
+#registerButtonContainer {
+  text-align: center;
+}
+
+.errorMess {
+  color: red;
+  font-size: 16px;
+}
+
+.infoMess {
+  color: grey;
+  font-size: 15px;
+}
+
+.cardLogo {
+  margin-left: 30px;
+  transform: translateY(10px);
+}
+
+.succesMess {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+body {
+  background-color: lightgreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:host {
+  flex: block;
+  min-width: 100vh;
+}
+
+.header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgreen;
+}
+
+#naslov {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+#naslovContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  border-radius: 0px 0px 75px 75px;
+  background-color: green;
+}
+
+#formContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#naslovPrijava {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#povratakNaPocetnuLink {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#povratakNaPocetnuLinkContainer {
+  margin-top: 15px;
+}
+
+
+
+

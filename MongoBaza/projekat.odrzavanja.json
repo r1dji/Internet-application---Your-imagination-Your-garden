@@ -1,0 +1,90 @@
+[
+{
+  "IdP": 1,
+  "IdO": 1,
+  "firma": "Firma 1",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-9-19",
+  "datumZavrsetka": "",
+  "dekorater": "",
+  "vlasnik": "vlasnik5",
+  "status": "u obradi",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 3,
+  "IdO": 2,
+  "firma": "Firma 1",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-8-19",
+  "datumZavrsetka": "2024-8-22",
+  "dekorater": "dekorater2",
+  "vlasnik": "vlasnik2novo",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 4,
+  "IdO": 3,
+  "firma": "Firma 1",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-7-20",
+  "datumZavrsetka": "2024-7-22",
+  "dekorater": "dekorater1",
+  "vlasnik": "vlasnik5",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 7,
+  "IdO": 4,
+  "firma": "Firma 2",
+  "datumPravljenjaZahtevaOdrzavanja": "2023-09-10",
+  "datumZavrsetka": "2023-09-10",
+  "dekorater": "dekor4",
+  "vlasnik": "vlasnik5",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 7,
+  "IdO": 5,
+  "firma": "Firma 2",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-05-10",
+  "datumZavrsetka": "2024-05-10",
+  "dekorater": "dekor4",
+  "vlasnik": "vlasnik5",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 8,
+  "IdO": 6,
+  "firma": "Firma 2",
+  "datumPravljenjaZahtevaOdrzavanja": "2023-10-10",
+  "datumZavrsetka": "2023-10-10",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik5",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 8,
+  "IdO": 7,
+  "firma": "Firma 2",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-06-10",
+  "datumZavrsetka": "2024-06-10",
+  "dekorater": "dekorater3",
+  "vlasnik": "vlasnik5",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+},
+{
+  "IdP": 18,
+  "IdO": 8,
+  "firma": "Firma 3",
+  "datumPravljenjaZahtevaOdrzavanja": "2024-09-20",
+  "datumZavrsetka": "2024-09-20",
+  "dekorater": "dekorater5",
+  "vlasnik": "vlasnik2novo",
+  "status": "prihvacen",
+  "brVodenihPovrsina": 1
+}
+]

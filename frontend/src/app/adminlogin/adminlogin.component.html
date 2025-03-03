@@ -1,0 +1,22 @@
+<body>
+  <header class="header">
+    <div id="naslovContainer">
+      <h1 id="naslov">Vaša mašta - vaša bašta</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div id="loginFormContainer">
+      <h2 id="adminLoginNaslov">Admin login</h2>
+      <div id="prijavaForm">
+        Korisničko ime: <input type="text" [(ngModel)]="korisnicko_ime" class="inputLogin"><br>
+        Lozinka: <input type="password" [(ngModel)]="lozinka" class="inputLogin"><br>
+        <button (click)="login()" id="loginPotvrdaDugme">Prijavi se</button><br>
+        <div class="infoMess">{{message}}</div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p> Vaša mašta - vaša bašta <br> PIA projekat septembar 2024 <br> Elektotehnički fakultet, Univerzitet u Beogradu </p>
+  </footer>
+</body>
+

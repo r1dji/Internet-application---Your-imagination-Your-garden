@@ -1,0 +1,23 @@
+#barGraph {
+  margin-top: 5%;
+  margin-left: 2%;
+  width: 40%;
+}
+
+#pieGraph {
+  margin-top: 3%;
+  width: 25%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#histogramGraph {
+  margin-top: 5%;
+  margin-right: 2%;
+  width: 40%;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+}

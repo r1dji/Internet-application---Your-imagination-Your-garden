@@ -1,0 +1,50 @@
+#naslovZak {
+  margin-left: 10%;
+}
+
+#zakazivanje {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#zakazivanjaContainer {
+  margin-left: 35%;
+  width: 30%;
+}
+
+#naslovUsluge {
+  margin-bottom: 5px;
+}
+
+.aboutElem {
+  margin-top: 10px;
+}
+
+.splitter {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#cellCena {
+  text-align: center;
+}
+
+#cellCenaNaslov {
+  margin-left: 30px;
+}
+
+table {
+  border-spacing: 15px 0px;
+}
+
+.uobradi {
+  background-color: rgb(250, 250, 166);
+}
+
+.zakazan {
+  background-color: rgb(255, 255, 255);
+}

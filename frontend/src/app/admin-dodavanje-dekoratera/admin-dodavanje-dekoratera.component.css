@@ -1,0 +1,49 @@
+#formDiv {
+  font-size: 18px;
+  margin-left: 32%;
+  background-color: white;
+  padding: 20px 30px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.formelem {
+  margin-bottom: 10px;
+}
+
+#registerButton {
+  font-size: 16px;
+  margin-left: 45%;
+  margin-top: 20px;
+  padding: 5px 8px;
+}
+
+.errorMess {
+  color: red;
+  font-size: 16px;
+}
+
+.infoMess {
+  color: grey;
+  font-size: 15px;
+}
+
+.cardLogo {
+  margin-left: 30px;
+  transform: translateY(10px);
+}
+
+.succesMess {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+#naslovDodavanjeDekoratera {
+  margin-left: 12%;
+  font-size: 26px;
+}
+
+#biranjeFirme {
+  font-size: 15px;
+}

@@ -1,0 +1,136 @@
+<div id="outContainer">
+  <div id="leviDeo">
+    <div id="naslovIPotvrda">
+      <h3 id="dodavanjeFirmeNaslov">Dodavanje firme</h3>
+      <span id="dodajDugmeContainer"><button id="dodajFirmuDugme" [disabled]="dekorateri.length<2 || nazivFirme=='' || nazivFirmeErrorMess!='' || messageRegisterError!='' || datumiErrorMess!='' || kontaktOsoba=='' || telefonFirmeErrorMess!=''" (click)="dodajFirmu()">DODAJ FIRMU</button></span>
+      <span id="messDodFirme">{{messDodFirme}}</span>
+    </div>
+    <div id="unosPodataka">
+      <div id="korImeUnos" class="unosPodatakaElem">Naziv:<input type="text" id="korImeInput" [(ngModel)]="nazivFirme" (change)="proveriNazivFirme()"><span id="nazivFirmeErrorMess"><br>{{nazivFirmeErrorMess}}</span></div>
+      <div id="adresaUnos" class="unosPodatakaElem">
+        Adresa: (označite lokaciju na mapi) <input type="text" [value]="adresaFirme" id="adresaDisplay" readonly><br>
+        <div id="mapContainer"><app-map (addresChanged)="onAddressChange($event)"></app-map></div>
+      </div>
+      <div id="kontaktOsobaUnos" class="unosPodatakaElem">Kontakt osoba: <input type="text" id="kontaktOsobaInput" [(ngModel)]="kontaktOsoba"></div>
+      <div>
+        <div id="telefonUnos" class="unosPodatakaElem">Telefon: <input type="text" id="telefonInput" [(ngModel)]="telefonFirma" (change)="checkTelFirme()"></div>
+        <div id="telefonFirmeErrMess">
+          {{telefonFirmeErrorMess}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="desniDeo">
+    <div id="uslugeUnos" class="unosPodatakaElem">
+      <h3 id="uslugeNaslov">Usluge</h3>
+      <table>
+        <tr>
+          <th class="celijaTabele">Naziv</th>
+          <th class="celijaTabele">Cena</th>
+        </tr>
+        <tr *ngFor="let u of usluge">
+          <td class="celijaTabele">{{u.naziv}}</td>
+          <td class="celijaTabele" id="cenaUslKolona">{{u.cena}}</td>
+        </tr>
+      </table>
+      <hr id="uslugeIDodavUslugeSplitter">
+      <div class="dodavanjeUsluge">
+        <h3>Dodaj uslugu</h3>
+        <div>Naziv: <input type="text" [(ngModel)]="nazivUsluge"></div>
+        <div>Cena: <input type="number" min="0" [(ngModel)]="cenaUsluge"></div>
+        <div><button [disabled]="nazivUsluge=='' || cenaUsluge<0 || cenaUsluge==null" (click)="dodajUslugu()" id="dodajUsluguButton">Dodaj</button></div>
+      </div>
+    </div>
+    <hr id="uslugeIDodavUslugeSplitter">
+    <div id="datumPocOdmora" class="unosPodatakaElem">Datum početka odmora: <input type="date" id="datumPocOdmoraUnos" [(ngModel)]="datumPocetkaOdmora" (change)="proveriDatume()"></div>
+    <div id="datumKrajOdmora" class="unosPodatakaElem">Datum kraja odmora: <input type="date" id="datumKrajaOdmoraUnos" [(ngModel)]="datumKrajaOdmora" (change)="proveriDatume()"></div>
+    <div id="datumiErrMess">{{datumiErrorMess}}</div>
+    <div>
+      <h3>Dekorateri</h3>
+      <ul>
+        <li *ngFor="let d of dekorateri">{{d.ime}} {{d.prezime}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<hr id="pageSplitter">
+<div id="dodavanjeDekoratera">
+  <h2 id="naslovDodavanjeDekoratera">Dodavanje dekoratera za firmu</h2>
+  <div id="formDiv">
+    <div id="korisnicko_ime" class="formelem">
+      Korisničko ime: <input type="text" [(ngModel)]="korisnicko_ime" (change)="checkUsername()"><br>
+      <div class="errorMess">
+        {{messageKorImeError}}
+      </div>
+    </div>
+    <div id="lozinka" class="formelem">
+      Lozinka: <input type="password" [(ngModel)]="lozinka" (change)="checkPassword()"><br>
+      <div class="infoMess">
+        Lozinka mora imati minimalno 6 karaktera, maksimalno 10 karaktera.<br>
+        Mora imati jedno veliko slovo, tri mala slova, jedan broj, jedan specijalni karakter i mora počinjati slovom.
+      </div>
+      <div class="errorMess">
+        {{messageLozError}}
+      </div>
+    </div>
+    <div id="ime" class="formelem">
+      Ime: <input type="text" [(ngModel)]="ime"><br>
+    </div>
+    <div id="prezime" class="formelem">
+      Prezime: <input type="text" [(ngModel)]="prezime"><br>
+    </div>
+    <div id="pol" class="formelem">
+      Pol: M<input type="radio" value="muski" name="pol" [(ngModel)]="pol"> Z<input type="radio" value="zenski" name="pol"
+        [(ngModel)]="pol"><br>
+    </div>
+    <div id="adresa" class="formelem">
+      Adresa: <input type="text" [(ngModel)]="adresa"><br>
+    </div>
+    <div id="telefon" class="formelem">
+      Telefon: <input type="text" [(ngModel)]="telefon" (change)="checkPhone()"><br>
+      <div class="errorMess">
+        {{messagePhoneError}}
+      </div>
+    </div>
+    <div id="email" class="formelem">
+      E-mail: <input type="text" [(ngModel)]="email" (change)="checkEmail()"><br>
+      <div class="errorMess">
+        {{messageEmailError}}
+      </div>
+    </div>
+    <div id="slika" class="formelem">
+      Slika: <input type="file" [(ngModel)]="profilna_slika_file" (change)="pictureUploaded($event)"><br>
+      <div class="infoMess">
+        Fotografija mora biti veličine najmanje 100x100 px, a najveće 300x300 px.<br>
+        Fotografija mora biti u formatu .png, .jpg ili .jpeg.
+      </div>
+      <div class="errorMess">
+        {{messagePictureError}}
+      </div>
+    </div>
+    <div id="broj_kartice" class="formelem">
+      Broj kreditne kartice: <input type="text" [(ngModel)]="broj_kartice" (change)="checkCardNumber()">
+      <img *ngIf="tipKartice=='diners'" src="assets/images/dinerscard-logo.png" class="cardLogo">
+      <img *ngIf="tipKartice=='mastercard'" src="assets/images/mastercard-logo.jpg" class="cardLogo">
+      <img *ngIf="tipKartice=='visa'" src="assets/images/visa-logo.jpg" class="cardLogo">
+      <div class="errorMess">
+        {{messageCardNumberError}}
+      </div>
+    </div>
+    <div id="firmeOdabir" class="formelem">
+      Firma:
+      <select [(ngModel)]="nazivFirme" id="biranjeFirme" disabled>
+        <option [value]="nazivFirme" selected>{{nazivFirme}}</option>
+      </select>
+    </div>
+    <div>
+      <button (click)="dodaj()" id="registerButton">Dodaj</button><br>
+      <div class="errorMess">
+        {{messageRegisterError}}
+      </div>
+      <div class="succesMess">
+        {{messageRegisterSucces}}
+      </div>
+    </div>
+  </div>
+</div>

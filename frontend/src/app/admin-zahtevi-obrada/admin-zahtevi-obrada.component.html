@@ -1,0 +1,20 @@
+
+<h2 id="zahteviNaslov">Zahtevi</h2>
+<div class="content">
+  <div id="zahtev" *ngFor="let k of korisniciNeobradjeni">
+    <div id="profSlikaContainer"><img [src]="k.profilna_slika" id="profSlika"></div><!--profilna slika-->
+    <div class="zahtevElem">Korisničko ime: {{k.korisnicko_ime}}</div>
+    <div class="zahtevElem">Ime: {{k.ime}}</div>
+    <div class="zahtevElem">Prezime: {{k.prezime}}</div>
+    <div class="zahtevElem">Pol: {{k.pol}}</div>
+    <div class="zahtevElem">Adresa: {{k.adresa}}</div>
+    <div class="zahtevElem">Telefon: {{k.telefon}}</div>
+    <div class="zahtevElem">Email: {{k.email}}</div>
+    <div class="zahtevElem" id="brojKartice">Broj kartice: {{k.broj_kartice}}</div>
+    <div>
+      <button id="prihvatiButton" (click)="promeniStatus(k.korisnicko_ime, 'aktivan')">Prihvati</button>
+      <button id="odbaciButton" (click)="promeniStatus(k.korisnicko_ime, 'blokiran')">Odbaci</button>
+    </div>
+  </div>
+</div>
+

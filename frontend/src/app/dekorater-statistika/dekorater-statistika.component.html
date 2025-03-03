@@ -1,0 +1,11 @@
+<div id="content">
+  <div id="barGraph">
+    <canvas baseChart [options]="barChartOptions" [type]="barChartType" [data]="barChartData"></canvas>
+  </div>
+  <div id="pieGraph">
+    <canvas baseChart [data]="pieChartData" [type]="pieChartType" [options]="pieChartOptions"></canvas>
+  </div>
+  <div id="histogramGraph">
+    <canvas baseChart [data]="histogramData" [type]="histogramType" [options]="histogramOptions"></canvas>
+  </div>
+</div>

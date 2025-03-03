@@ -1,0 +1,20 @@
+<body>
+  <header class="header">
+    <div id="naslovContainer">
+      <h1 id="naslov">Vaša mašta - vaša bašta</h1>
+    </div>
+    <nav class="navbar">
+      <a routerLink="profil" class="navbarelem" id="profilLink">Profil</a>
+      <a routerLink="zakazivanja" class="navbarelem" id="zakazivanjaLink">Zakazivanja</a>
+      <a routerLink="odrzavanja" class="navbarelem" id="odrzavanjaLink">Održavanja</a>
+      <a routerLink="statistika" class="navbarelem" id="statistikaLink">Statistika</a>
+    </nav>
+  </header>
+  <div class="content">
+    <div id="odjavaDugme"><app-logout></app-logout></div>
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="footer">
+    <p> Vaša mašta - vaša bašta <br> PIA projekat septembar 2024 <br> Elektrotehnički fakultet, Univerzitet u Beogradu </p>
+  </footer>
+</body>

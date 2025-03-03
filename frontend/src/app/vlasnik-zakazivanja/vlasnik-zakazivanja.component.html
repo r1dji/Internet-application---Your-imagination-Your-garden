@@ -1,0 +1,24 @@
+<div id="content">
+  <h2 id="naslovZak">Trenutna zakazivanja</h2>
+  <div id="zakazivanjaContainer">
+    <div id="zakazivanje" *ngFor="let p of posloviAktuelni" [class.uobradi]="p.status=='u obradi'" [class.zakazan]="p.status=='zakazan'">
+      <div id="datumZakazivanja" class="aboutElem">Datum zakazivanja: {{p.datumZakazivanja}}</div>
+      <div id="datumRada" class="aboutElem">Datum rada: {{p.datumRada}}</div>
+      <div id="datumRada" class="aboutElem">Datum završetka: {{p.datumZavrsetka}}</div>
+      <div id="nazivFirme" class="aboutElem">Firma: {{p.firma}}</div>
+      <div id="statusPosla" class="aboutElem">Status: {{p.status}}</div>
+      <div id="usluge" class="aboutElem"><h3 id="naslovUsluge">Usluge</h3>
+        <table>
+          <tr>
+            <th>Naziv</th>
+            <th>Cena</th>
+          </tr>
+          <tr *ngFor="let u of p.usluge">
+            <td>{{u.naziv}}</td>
+            <td id="cellCena">{{u.cena}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
